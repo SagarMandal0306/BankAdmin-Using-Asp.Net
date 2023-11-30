@@ -1,0 +1,302 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Bigshot+One&family=Lato:ital@0;1&family=Lora:wght@500&family=Oswald:wght@500&family=PT+Serif&family=Playfair+Display&family=Poppins:wght@500&family=Rubik+Bubbles&family=Satisfy&family=Source+Code+Pro:wght@500&family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+
+}
+body{
+    overflow:hidden;
+}
+form{
+    display:flex;
+    
+    
+    width:100vw;
+    
+}
+.side-bar {
+    width: 20%;
+    background-color: purple;
+    height: 100vh;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.main-body{
+    width:80%;
+   
+
+}
+
+.main-body .container{
+    position:relative;
+
+}
+.main-body .contain svg{
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index:-999;
+}
+
+
+.side-bar .head {
+    width: 130px;
+    height: 130px;
+    /*background-color: white;*/
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.side-bar .head img{
+    width:140px;
+    border-radius:50%;
+    margin-top:10px;
+
+}
+.side-bar .menu{
+    padding-top:20px;
+    margin:auto;
+}
+
+.side-bar .menu ul li{
+    list-style-type:none;
+    padding:10px;
+    border-radius:10px;
+    transition:0.3s;
+}
+.side-bar .menu ul li:hover{
+    background-color:hotpink;
+}
+
+.a,
+.side-bar .menu ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+}
+.side-bar .menu ul li a i{
+    color:deeppink;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: "ubuntu";
+    box-shadow:0 0 10px 0;
+}
+
+
+nav .logo .h1{
+   color:purple;
+  
+
+}
+
+nav .user{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+
+}
+nav .user img{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    border:2px solid green;
+}
+
+.main-body .contain{
+    padding:50px;
+
+    height:100vh;
+}
+
+.table{
+    text-align:center;
+}
+
+.form{
+    border:2px solid purple;
+   
+    padding:20px;
+    width:500px;
+    color:white;
+    background-color:purple;
+    border-radius:10px;
+    box-shadow:0 0 10px 0;
+}
+
+.form-control{
+    font-size:15px;
+    font-weight:500;
+
+}
+
+.form label{
+    font-weight:bold;
+    font-family:"ubuntu",serif;
+}
+.tbl-img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:1px solid green;
+    object-fit:contain;
+}
+
+.user-img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:2px solid red;
+}
+
+.dashbord{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.box {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+    width:300px;
+    margin:0 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+}
+.box i{
+    font-size:100px;
+    position:absolute;
+    right:-10px;
+    top:20px;
+    overflow:hidden;
+}
+
+
+
+.rupee-icon{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.wrapper{
+    display:flex;
+    justify-content:space-between;
+    
+}
+ .img-hld{
+    background-color:purple;
+    padding:20px;
+    border-radius:10px;
+    height:300px;
+    width:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:2px solid purple;
+    
+}
+ .img-hld .img{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    border:2px solid white;
+    
+}
+.btn{
+    background-color:deeppink;
+}
+
+.highlight{
+    font-weight:bold;
+    font-size:20px;
+    color:deeppink;
+}
+
+.pagination-style a {
+    background-color: purple;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 5px;
+    transition:0.3s;
+}
+    .pagination-style a:hover {
+        padding: 2px 6px;
+    }
+.pagination-style span {
+    background-color: purple;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.msg{
+    font-size:60px;
+    color:purple;
+    text-align:center
+}
+
+.login-img{
+    /*height:150px;*/
+    background-color:white;
+    width:200px;
+    border-radius:50%;
+
+}
+.login-img img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+
+.form-contain{
+    display:flex;
+    justify-content:center;
+    /*align-items:center;*/
+    flex-direction:column;
+}
+
+.login-btn{
+    padding:5px 10px;
+    color:white;
+    background-color:deeppink;
+    width:100%;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.login-btn:hover{
+    background-color:hotpink;
+    color:white;    
+}
+
+.msg-link{
+    text-decoration:underline;
+    cursor:pointer;
+}
+.msg-link:hover{
+    color:darkgray;
+}

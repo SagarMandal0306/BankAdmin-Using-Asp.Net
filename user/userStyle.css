@@ -1,0 +1,362 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Bigshot+One&family=Lato:ital@0;1&family=Lora:wght@500&family=Oswald:wght@500&family=PT+Serif&family=Playfair+Display&family=Playpen+Sans&family=Poppins:wght@500&family=Rubik+Bubbles&family=Satisfy&family=Source+Code+Pro:wght@500&family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto Slab ,sans-serif;
+}
+
+
+nav{
+    position:fixed;
+    width:100%;
+    z-index: 999;
+    /* padding:0 10px ; */
+      
+}
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:black;
+    color:white;
+    padding:10px;
+    
+   
+}
+
+nav .logo{
+    width:100px;
+    
+}
+
+nav .logo img {
+        width: 100%;
+        height: 100%;
+        color: white;
+        border-radius: 50%;
+        box-shadow: 0 0 10px 0;
+        object-fit:cover;
+    }
+
+nav ul li{
+    list-style-type:none;
+    display:inline-block;
+    margin:0 10px;
+}
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    nav ul li a::after {
+        content: "";
+        height: 4px;
+        width: 0;
+        background-color: purple;
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        transition: 1s;
+    }
+
+    nav ul li a:hover {
+        color: darkviolet;
+    }
+    nav ul li a:hover::after   {
+        width: 100%;
+        
+    }
+
+.first-container{
+    height:70vh;
+    /* width:100vw; */
+    background:linear-gradient(to left ,darkviolet,purple,purple);
+    padding-top:100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+
+}
+.money-card{
+    background-color: white;
+    /* width: 25vw; */
+    
+    border-radius: 10px;
+    font-family: ubuntu,sans-serif;
+    font-weight: bold;
+}
+.money-card .head{
+    color: white;
+    font-weight: 500;
+    background-color: aquamarine;
+    border-radius:10px 10px 0 0  ;
+    padding: 10px;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+}
+
+
+.money-card .head p{
+    padding: 7px;
+    background-color: green;
+    width: max-content;
+    border-radius: 20px;
+    font-size: 10px;
+    margin: 0;
+}
+.money-card .money-view span{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+}
+.money-card .money-view .eye{
+    cursor: pointer;
+}
+.money-card .money-view{
+    padding: 0 10px;
+}
+
+
+.money-card .money-view .close-eye::before{
+    content: "\f070";
+    cursor: pointer;
+    /* display: none; */
+}
+.money-card .money-view .num{
+    font-size: 16px;
+}
+.hide{
+    display: none;
+}
+
+.money-card .money-view .star i{
+    /* display: none; */
+    /* font-weight: bold; */
+    font-size: 5px;
+    margin: 0 1px;
+}
+.money-card .money-view .upi{
+    font-size: 13px;
+    color: rgb(112, 111, 111) ;
+    padding: 0 10px;
+}
+
+.money-card .money-view button{
+    background-color: purple;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+.money-card .money-view button:hover{
+   padding:10px 30px;
+}
+
+.functions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.box-desgine{
+    color: purple;
+    text-decoration: none;
+}
+
+.ltl_box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+}
+.ltl_box .box{
+    box-shadow: 0 0 5px 0;
+    border-radius: 10px;
+    padding:10px 13px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.ltl_box .box:hover{
+    transform: translateY(-5px);
+}
+.ltl_box .box i{
+    color: purple;
+}
+
+.ltl_box span{
+    font-size: 14px;
+}
+
+.profile-img img,
+.img-holder img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: 1s;
+   
+}
+.img-holder img:hover{
+    transform: rotate3d(0,1,0, 360deg);
+    
+}
+
+.profile-img img:hover{
+    transform: scale(1.1);
+}
+
+
+.transaction{
+    padding:30px 200px ;
+
+}
+.transaction h1{
+    /* text-align: center; */
+    font-weight: 500;
+    font-size: 30px;
+    font-family: ubuntu;
+}
+
+.transaction .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.transaction .head a{
+    font-size: 15px;
+    font-weight: bold;
+    color: purple;
+    text-decoration: none;
+}
+.transaction .list{
+    display: flex;
+    flex-direction: column;
+}
+.transaction .list .list-contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+
+}
+.transaction .list .list-contain .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transaction .list .list-contain .profile .box{
+    box-shadow: 0 0 6px 0;
+    border-radius: 3px 3px 15px 3px;
+    padding: 10px;
+    margin-right: 7px;
+}
+.transaction .list .list-contain .profile .box img{
+    width: 30px;
+}
+.transaction .list .list-contain .text p{
+    margin: 0;
+}
+.transaction .list .list-contain .text .name{
+    font-weight: 600;
+    font-family: ubuntu;
+    font-size: 20px;
+}
+
+.transaction .list .list-contain .text p{
+    font-weight: 300;
+    font-family: ubuntu;
+    color: gray;
+}
+
+.transaction .list .list-contain .money{
+    color: rgb(0, 216, 0);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+/* signup page styling  */
+ .body{
+    padding-top: 10%;
+
+    flex-direction: column;
+    height: 100vh;
+    background:linear-gradient(to left ,darkviolet,purple);
+    
+ }
+
+.body .form{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 50px;
+ }
+
+.body .form label{
+    color: white;
+    font-weight: bold;
+}
+
+.body .form h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    font-family: ubuntu ;
+}
+
+.body  .button{
+    margin : auto;
+}
+
+
+/* Payment styling  */
+.payment-body{
+    padding: 135px 0 20px 0;
+    height: 100vh;
+    /* background:linear-gradient(to left ,darkviolet,purple); */
+}
+
+.search{
+    width: 200px;
+}
+
+/* Profile styling  */
+.acc-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* flex-direction: column; */
+}
+
+.acc-details .left {
+    /* font-size: 12px; */
+    color: gray;
+    margin-right:15px ;
+}
+
+.personal-details{
+    padding: 20px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.search-contain{
+    padding: 10px 200px;
+    display: flex;
+}
+
